@@ -1,0 +1,44 @@
+{
+  "description": "Sandinas Prompt Improver - Hooks para Windows",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "description": "Always processes prompts with XML tags. Detects plan mode and context clarity.",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}\\scripts\\run_python.bat ${CLAUDE_PLUGIN_ROOT}\\scripts\\improve-prompt.py",
+            "description": "Run prompt improvement (Windows)",
+            "timeout": 60
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "description": "Writes memories to Serena MCP",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}\\scripts\\run_python.bat ${CLAUDE_PLUGIN_ROOT}\\scripts\\memory-writer.py",
+            "description": "Write session memory to Serena MCP (Windows)",
+            "timeout": 60
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "description": "Saves Sandinas context before compactation",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}\\scripts\\run_python.bat ${CLAUDE_PLUGIN_ROOT}\\scripts\\context-saver.py",
+            "description": "Save context before compact (Windows)",
+            "timeout": 60
+          }
+        ]
+      }
+    ]
+  }
+}
