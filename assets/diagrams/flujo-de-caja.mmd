@@ -1,0 +1,15 @@
+%% Flujo de caja simplificado
+%% Pendiente de completar con datos financieros reales
+
+graph TD
+    A[Inversion Inicial] --> B[Capital de Trabajo]
+    B --> C{Operacion Mensual}
+    C --> D[Ingresos por Ventas]
+    C --> E[Costos Fijos]
+    C --> F[Costos Variables]
+    D --> G[Flujo Neto]
+    E --> G
+    F --> G
+    G --> H{Resultado}
+    H -->|Positivo| I[Reinversion / Distribucion]
+    H -->|Negativo| J[Uso de Capital de Trabajo]

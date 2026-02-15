@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx skills:*)",
+      "Bash(npx:skills *)",
+      "Bash(git status:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(mkdir:*)",
+      "Bash(ls:*)",
+      "Skill(startup-financial-modeling)",
+      "Skill(brand-strategist)",
+      "Skill(brand-designer)",
+      "Skill(obsidian)",
+      "Skill(business-plan-writer)",
+      "Skill(marketing-strategy-pmm)",
+      "Skill(hospitality-coordinator)",
+      "Skill(pitch-deck)",
+      "Skill(chef-assistant)",
+      "Skill(document-xlsx)",
+      "Skill(sequential-thinking-zen)",
+      "Skill(writing-clearly-and-concisely)",
+      "Skill(brainstorming)",
+      "Skill(spec-gen-skill)",
+      "Skill(codemap)"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+# Obsidian - config local (cada usuario tiene el suyo)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+
+# Excel temporales
+~$*.xlsx
+~$*.xls
+.~lock.*
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# Logs
+*.log
+
+# Credenciales
+.env
+.env.local
+secrets.json
