@@ -89,6 +89,7 @@ Dos computadoras trabajan en paralelo sobre este repositorio via GitHub (`fgpaz/
 - No editar el mismo archivo en ambas computadoras a la vez
 - `.obsidian/workspace.json` esta en `.gitignore` (es config local de cada maquina)
 - `.claude/settings.local.json` esta en `.gitignore` (es config local de Claude Code)
+- SIEMPRE al finalizar un trabajo, hacer commit y push de los cambios usando `gh` (GitHub CLI)
 
 ## Estructura del vault
 
