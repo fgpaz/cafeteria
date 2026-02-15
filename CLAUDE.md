@@ -91,6 +91,43 @@ Dos computadoras trabajan en paralelo sobre este repositorio via GitHub (`fgpaz/
 - `.claude/settings.local.json` esta en `.gitignore` (es config local de Claude Code)
 - SIEMPRE al finalizar un trabajo, hacer commit y push de los cambios usando `gh` (GitHub CLI)
 
+## Skills y flujo de trabajo
+
+### Regla obligatoria: brainstorming al inicio
+
+SIEMPRE que se inicie un chat o se reciba una tarea nueva, ejecutar primero la skill `brainstorming` antes de cualquier otra accion. El brainstorming refina la idea, identifica dependencias y genera un plan accionable. No se debe escribir codigo ni editar archivos sin pasar primero por brainstorming.
+
+### Mapeo de skills por area
+
+Cuando se trabaje en un area especifica, usar las skills asociadas segun esta tabla. Las skills se combinan: brainstorming siempre va primero, luego se aplican las skills del area correspondiente.
+
+| Area | Carpeta | Skills principales | Skills complementarias |
+|---|---|---|---|
+| Plan de negocio | `01-Plan-de-Negocio/` | `business-plan-writer`, `hospitality-coordinator` | `marketing-strategy-pmm` (para Plan-de-Marketing.md), `chef-assistant` (para menu y oferta gastronomica) |
+| Marca y concepto | `02-Marca-y-Concepto/` | `brand-strategist`, `brand-designer` | `writing-clearly-and-concisely` (para Tono-y-Voz.md y Brand-Story.md) |
+| Proyecciones financieras | `03-Proyecciones-Financieras/` + `financials/` | `startup-financial-modeling`, `xlsx` | `business-plan-writer` (para narrativa del resumen financiero) |
+| Presentacion ejecutiva | `04-Presentacion-Ejecutiva/` | `pitch-deck` | `brand-strategist` (para consistencia de mensaje), `docx` (si se genera documento) |
+| Recursos e investigacion | `05-Recursos/` | `business-plan-writer` | `hospitality-coordinator` (para benchmarks del sector gastronomico) |
+| Assets visuales | `assets/` | `brand-designer`, `obsidian` | - |
+| Vault general | Raiz y estructura | `obsidian` | `writing-clearly-and-concisely` |
+
+### Skills transversales (aplican a todas las areas)
+
+- `brainstorming`: SIEMPRE primero, antes de cualquier tarea
+- `writing-plans`: antes de tareas que requieran multiples pasos de implementacion
+- `writing-clearly-and-concisely`: para toda prosa que se redacte en documentos
+- `obsidian`: para cualquier operacion sobre el vault (crear notas, wikilinks, frontmatter)
+- `dispatching-parallel-agents`: cuando haya 2 o mas tareas independientes que se puedan ejecutar en paralelo
+- `executing-plans`: cuando exista un plan de implementacion listo para ejecutar
+
+### Flujo de trabajo estandar
+
+1. **Brainstorming**: refinar la idea, identificar el area y las skills necesarias
+2. **Planificacion** (si aplica): usar `writing-plans` para tareas complejas
+3. **Ejecucion**: aplicar las skills del area correspondiente
+4. **Revision**: verificar que el resultado respete las convenciones del vault (frontmatter, wikilinks, callouts)
+5. **Commit y push**: al finalizar, commit descriptivo y push con `gh`
+
 ## Estructura del vault
 
 ```
