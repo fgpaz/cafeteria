@@ -37,7 +37,7 @@ tags: [plan-de-negocio, competencia]
 
 | Variable | Proyecto | Cadenas/genericas | Especialidad fuera de zona | Brunch comercial |
 |---|---|---|---|---|
-| Posicionamiento de precio | Medio (ARS 7.000-10.000 ticket objetivo) | Medio a medio-bajo | Medio-alto / alto | Medio-alto |
+| Posicionamiento de precio | Medio (~ARS 13.000 ticket promedio) | Medio a medio-bajo | Medio-alto / alto | Medio-alto |
 | Calidad de cafe | Especialidad + barismo + filtrados | Estandar | Alta | Variable |
 | Propuesta gastronomica | Brunch corto, enfocado, rotativo | Basica o estandar | Variable | Fuerte en brunch |
 | Experiencia de servicio | Diferencial estrategico | Estandarizada | Buena, no siempre consistente | Correcta |

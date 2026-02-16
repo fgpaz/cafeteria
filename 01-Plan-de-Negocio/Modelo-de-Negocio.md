@@ -89,10 +89,11 @@ Ver diagrama detallado: [[assets/diagrams/business-model-canvas.mmd]]
 
 | Indicador | Base |
 |---|---|
-| Ticket medio | ARS 8.500 |
+| Ticket medio | ARS 13.000 |
+| Clientes promedio por dia por local | 65 (rango 50-80) |
 | Capacidad media por local | 40 cubiertos |
-| Rotacion diaria promedio | 2,4 |
-| Ocupacion efectiva anual | 62% |
+| Rotacion de mesa por dia | 1-2 veces |
+| Ocupacion efectiva | 60% |
 | Dias operativos al ano | 360 |
 
 > [!info] Uso de USD

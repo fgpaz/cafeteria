@@ -13,7 +13,7 @@ tags: [plan-de-negocio, marketing, pricing]
 
 1. Alcanzar reconocimiento de marca local en radios de 2-3 km por local.
 2. Lograr base de clientes recurrentes superior al 40% de transacciones al cierre del ano 1.
-3. Sostener ticket medio en rango ARS 7.000-10.000 sin erosionar percepcion de calidad.
+3. Sostener ticket medio en rango ~ARS 13.000 sin erosionar percepcion de calidad.
 
 ## Estrategia de lanzamiento por zona
 
@@ -47,7 +47,7 @@ tags: [plan-de-negocio, marketing, pricing]
 ## Estrategia de pricing
 
 - Politica central: "especialidad accesible".
-- Ticket objetivo: ARS 7.000-10.000.
+- Ticket objetivo: ~ARS 13.000.
 - Arquitectura de precios por escalera:
   - Entrada: cafe simple + opcion acompanamiento.
   - Medio: combo cafe + pasteleria.
@@ -76,7 +76,7 @@ tags: [plan-de-negocio, marketing, pricing]
 | % clientes recurrentes | > 40% |
 | Frecuencia mensual cliente activo | >= 2 visitas |
 | Resena promedio Google | 4,6 o superior |
-| Ticket medio | ARS 7.000-10.000 |
+| Ticket medio | ~ARS 13.000 |
 
 ## Riesgos de marketing y mitigacion
 

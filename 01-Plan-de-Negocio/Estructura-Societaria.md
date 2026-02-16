@@ -24,10 +24,11 @@ tags: [plan-de-negocio, legal, sociedad]
 
 ### Aportes
 
-| Parte | Aporte principal | Tipo |
-|---|---|---|
-| Socia operativa | Know-how, gestion integral, ejecucion diaria | No monetario |
-| Socio capitalista | Inversion inicial y respaldo financiero | Monetario |
+| Parte             | Aporte principal                             | Tipo         |
+| ----------------- | -------------------------------------------- | ------------ |
+| Socia operativa   | Know-how, gestion integral, ejecucion diaria | No monetario |
+| Socio capitalista | Inversion inicial y respaldo financiero      | Monetario    |
+|                   |                                              |              |
 
 ## Participaciones y vesting
 
@@ -36,8 +37,8 @@ tags: [plan-de-negocio, legal, sociedad]
 
 ### Esquema sugerido de vesting operativo
 
-- Cliff: 12 meses.
-- Vesting total: 48 meses.
+- Sin cliff: la participacion empieza a consolidarse desde el mes 1.
+- Vesting total: 18 meses (consolidacion mensual proporcional).
 - Aceleracion parcial sujeta a hitos extraordinarios pactados.
 
 ## Gobierno y toma de decisiones
@@ -63,12 +64,12 @@ tags: [plan-de-negocio, legal, sociedad]
 
 ## Mecanismos de proteccion entre partes
 
-| Mecanismo | Objetivo |
-|---|---|
-| Claves de administracion compartidas | Transparencia operativa y financiera |
-| Reporte mensual estandarizado | Visibilidad de KPIs y caja |
-| Pactos de no competencia/no captacion | Proteccion de activos intangibles |
-| Derechos de preferencia | Orden en eventuales transferencias de participacion |
+| Mecanismo                             | Objetivo                                            |
+| ------------------------------------- | --------------------------------------------------- |
+| Claves de administracion compartidas  | Transparencia operativa y financiera                |
+| Reporte mensual estandarizado         | Visibilidad de KPIs y caja                          |
+| Pactos de no competencia/no captacion | Proteccion de activos intangibles                   |
+| Derechos de preferencia               | Orden en eventuales transferencias de participacion |
 
 ## Escenarios de salida y resolucion de conflictos
 

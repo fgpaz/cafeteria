@@ -23,16 +23,17 @@ El proyecto busca liderar la categoria en Dorrego y Villa Nueva con un posiciona
 
 ## Solucion propuesta
 
-- Dos locales con operacion 7:00-19:00.
+- Dos locales: lunes a viernes 7:00-20:30; sabados y domingos en turno cortado (9:00-14:00 y 17:00-21:00).
 - Menu corto (8-12 platos) de cocina fria + horno, con rotacion estacional.
 - Barra de cafe de especialidad (espresso y filtrados V60/Chemex).
+- Equipo de 6 personas por local (encargado, cajero, barista, cocinero, 2 runners).
 - Servicio excepcional como ventaja competitiva principal.
 
 ## Mercado objetivo
 
 - Segmento primario: profesionales urbanos 25-45 anos.
 - Segmento secundario: parejas/familias jovenes de fin de semana.
-- Ticket objetivo: ARS 7.000-10.000 por visita.
+- Ticket promedio: ~ARS 13.000 por visita.
 
 ## Modelo de negocio (resumen)
 

@@ -11,25 +11,36 @@ tags: [plan-de-negocio, operaciones, menu, equipo]
 
 ## Diseno operativo de los dos locales
 
-- Horario de operacion: 7:00 a 19:00.
-- Formato de servicio: mostrador + salon (con apoyo de runner en picos).
+- Horario de operacion:
+  - Lunes a viernes: 7:00 a 20:30 (jornada corrida).
+  - Sabados y domingos: 9:00-14:00 y 17:00-21:00 (turno cortado).
+- Formato de servicio: mostrador + salon (con apoyo de runners en picos).
 - Capacidad objetivo: 30-50 personas por local (base de modelo: 40).
-- Foco horario: desayuno (7-10), brunch (10-14), merienda (16-19).
+- Foco horario: desayuno (7-10), brunch (10-14), merienda (16-20).
 
-## Dotacion por local (5-7 personas)
+## Dotacion por local (6 personas)
 
-| Rol | Dotacion sugerida | Responsabilidad principal |
+| Rol | Dotacion | Responsabilidad principal |
 |---|---|---|
-| Encargado/a de turno | 1 | Coordinacion operativa y caja |
-| Barista | 1-2 | Extraccion, calibracion y calidad de cafe |
-| Cocina/produccion fria-horno | 2 | Mise en place, despacho y control de porciones |
-| Salon/caja/runner | 1-2 | Atencion, limpieza de mesas, experiencia cliente |
+| Encargado/a | 1 | Coordinacion operativa, supervision general |
+| Cajero/a | 1 | Caja, cobro y atencion al cliente en mostrador |
+| Barista | 1 | Extraccion, calibracion y calidad de cafe |
+| Cocinero/a | 1 | Mise en place, despacho y control de porciones |
+| Runners | 2 | Servicio en salon, limpieza de mesas, experiencia cliente |
 
 ## Turnos y cobertura
 
-- Turno manana: 6:30-14:00 (apertura y pico de desayuno/brunch).
-- Turno tarde: 13:00-20:00 (brunch tardio, merienda y cierre).
-- Solape operativo: 13:00-14:00 para traspaso sin friccion.
+### Lunes a viernes (7:00-20:30)
+
+- Turno manana: 6:30-14:30 (apertura, desayuno y pico de brunch).
+- Turno tarde: 14:00-21:00 (merienda y cierre).
+- Solape operativo: 14:00-14:30 para traspaso sin friccion.
+
+### Sabados y domingos (turno cortado)
+
+- Turno manana: 8:30-14:30 (apertura, brunch de fin de semana).
+- Turno tarde: 16:30-21:30 (reapertura, merienda y cierre).
+- Cierre intermedio: 14:00-17:00.
 
 ## Flujo operativo diario
 
