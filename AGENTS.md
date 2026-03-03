@@ -1,4 +1,4 @@
-OBLIGATORIO: Ejecutar skill `brainstorming` antes de cualquier accion. No escribir ni editar archivos sin pasar primero por brainstorming.
+OBLIGATORIO: Ejecutar brainstorming antes de cualquier accion. No escribir ni editar archivos sin pasar primero por el proceso de brainstorming descrito en este documento.
 
 # Cafeteria de Especialidad + Brunch - Guaymallen, Mendoza
 
@@ -62,9 +62,9 @@ Cuando trabajas en este proyecto, pensas como si fueras parte del equipo fundado
 
 ### Reglas
 
-- NUNCA modificar un archivo sin haberlo leido primero completo usando `Read`.
+- NUNCA modificar un archivo sin haberlo leido primero completo.
 - NUNCA proponer cambios en una seccion sin conocer el estado actual de las secciones relacionadas.
-- Al recibir una tarea, el primer paso siempre es explorar el contexto relevante con `Read`, `Grep` y `Glob`.
+- Al recibir una tarea, el primer paso siempre es leer los archivos relevantes del vault.
 
 ### Mapa de dependencias
 
@@ -86,7 +86,7 @@ Antes de modificar un documento, leer primero sus dependencias:
 Antes de empezar cualquier tarea, seguir estos pasos en orden:
 
 1. Identificar el archivo o seccion objetivo.
-2. Leer el archivo objetivo completo con `Read`.
+2. Leer el archivo objetivo completo.
 3. Leer archivos dependientes segun la tabla de arriba.
 4. Verificar el campo `status:` en el frontmatter de cada archivo tocado.
 5. Resumir al usuario el estado actual antes de proponer cambios.
@@ -99,11 +99,14 @@ Antes de empezar cualquier tarea, seguir estos pasos en orden:
 
 Se aplica a **toda decision que involucre elegir entre alternativas**: estructura de contenido, cifras, estrategia, formato, enfoque. No aplica a preguntas simples de si/no ni a tareas mecanicas (formatear, commitear).
 
-### Proceso en Claude Code
+### Proceso en Codex
 
-1. Ejecutar la skill `brainstorming` con el contexto de la tarea.
-2. A partir del resultado del brainstorming, formular las preguntas y decisiones que necesiten aprobacion.
-3. Para cada decision, presentar el siguiente formato obligatorio:
+Al recibir una tarea nueva, antes de escribir o editar cualquier archivo, seguir este proceso internamente:
+
+1. Reformular la tarea en tus propias palabras para verificar que se entendio correctamente.
+2. Identificar que area del vault afecta (ver tabla de comportamiento por area mas abajo).
+3. Listar las decisiones que hay que tomar antes de ejecutar.
+4. Para cada decision, presentar el formato de decision al usuario y esperar aprobacion.
 
 ### Formato de decision
 
@@ -148,7 +151,7 @@ el inversor va a percibir el documento. 1-2 lineas.]
 
 - Al comenzar cualquier tarea que involucre documentos financieros.
 - Al terminar de editar un documento que contenga cifras referenciadas por otros documentos.
-- Al inicio de cada sesion de trabajo: hacer un "health check" rapido usando `Grep` para buscar cifras clave en todo el vault.
+- Al inicio de cada sesion de trabajo: hacer un health check rapido leyendo las cifras clave de los documentos fuente de verdad.
 
 ### Tabla de cross-referencia
 
@@ -160,7 +163,7 @@ el inversor va a percibir el documento. 1-2 lineas.]
 | COGS % | `Costos-Fijos-y-Variables.md` | `Proyeccion-de-Ventas.md`, `Resumen-Financiero.md` |
 | Payback y ROI | `ROI-y-Payback.md` | `Resumen-Financiero.md`, `Escenarios.md`, `Deck-Ejecutivo.md` |
 | Cantidad de personal | `Plan-Operativo.md` | `Costos-Fijos-y-Variables.md`, `Estructura-Societaria.md` |
-| Nombre de marca | Este archivo (CLAUDE.md) | `Brand-Guidelines.md`, `Brand-Story.md`, `Deck-Ejecutivo.md` |
+| Nombre de marca | Este archivo (AGENTS.md) | `Brand-Guidelines.md`, `Brand-Story.md`, `Deck-Ejecutivo.md` |
 
 ### Protocolo al encontrar una inconsistencia
 
@@ -223,7 +226,7 @@ Este repositorio completo es un vault de Obsidian. Respetar estas convenciones:
 
 ### Planillas financieras
 
-- Usar la skill `xlsx` para crear y editar archivos .xlsx
+- Formato: archivos .xlsx
 - Ubicacion: `financials/`
 - Archivos esperados: `Inversion-Inicial.xlsx`, `Proyecciones-Mensuales.xlsx`, `Escenarios.xlsx`, `Dashboard-KPIs.xlsx`
 
@@ -238,43 +241,43 @@ Este repositorio completo es un vault de Obsidian. Respetar estas convenciones:
 
 ---
 
-## Skills y flujo de trabajo (Claude Code)
+## Comportamiento y flujo de trabajo (Codex)
 
 ### Regla obligatoria: brainstorming al inicio
 
-SIEMPRE que se inicie un chat o se reciba una tarea nueva, ejecutar primero la skill `brainstorming` antes de cualquier otra accion. El brainstorming refina la idea, identifica dependencias y genera un plan accionable. No se debe escribir codigo ni editar archivos sin pasar primero por brainstorming.
+SIEMPRE que se inicie una tarea nueva, ejecutar el proceso de brainstorming descrito arriba antes de cualquier otra accion. Reformular la tarea, identificar dependencias y generar un plan accionable. No editar archivos sin pasar primero por brainstorming.
 
-### Mapeo de skills por area
+### Comportamiento por area
 
-Cuando se trabaje en un area especifica, usar las skills asociadas segun esta tabla. Las skills se combinan: brainstorming siempre va primero, luego se aplican las skills del area correspondiente.
+Cuando se trabaje en un area especifica, seguir las instrucciones correspondientes:
 
-| Area | Carpeta | Skills principales | Skills complementarias |
-|---|---|---|---|
-| Plan de negocio | `01-Plan-de-Negocio/` | `business-plan-writer`, `hospitality-coordinator` | `marketing-strategy-pmm` (para Plan-de-Marketing.md), `chef-assistant` (para menu y oferta gastronomica) |
-| Marca y concepto | `02-Marca-y-Concepto/` | `brand-strategist`, `brand-designer` | `writing-clearly-and-concisely` (para Tono-y-Voz.md y Brand-Story.md) |
-| Proyecciones financieras | `03-Proyecciones-Financieras/` + `financials/` | `startup-financial-modeling`, `xlsx` | `business-plan-writer` (para narrativa del resumen financiero) |
-| Presentacion ejecutiva | `04-Presentacion-Ejecutiva/` | `pitch-deck` | `brand-strategist` (para consistencia de mensaje), `docx` (si se genera documento) |
-| Recursos e investigacion | `05-Recursos/` | `business-plan-writer` | `hospitality-coordinator` (para benchmarks del sector gastronomico) |
-| Assets visuales | `assets/` | `brand-designer`, `obsidian` | - |
-| Vault general | Raiz y estructura | `obsidian` | `writing-clearly-and-concisely` |
+| Area | Carpeta | Que hacer |
+|---|---|---|
+| Plan de negocio | `01-Plan-de-Negocio/` | Leer todos los archivos de la carpeta antes de modificar cualquiera. Aplicar pensamiento de hospitality y operaciones de restaurantes. Para Plan-de-Marketing.md, aplicar estrategia de product marketing. Para temas de menu y gastronomia, pensar como chef consultor. |
+| Marca y concepto | `02-Marca-y-Concepto/` | Aplicar criterio de brand strategy y diseno de identidad visual. Para Tono-y-Voz.md y Brand-Story.md, priorizar escritura clara y concisa (reglas de Strunk). |
+| Proyecciones financieras | `03-Proyecciones-Financieras/` + `financials/` | Aplicar modelado financiero de startup. Cruzar TODAS las cifras con la tabla de cross-referencia. Para narrativa de Resumen-Financiero.md, combinar rigor numerico con prosa convincente para inversores. |
+| Presentacion ejecutiva | `04-Presentacion-Ejecutiva/` | Seguir estructura estandar de pitch deck (10 slides). Mantener consistencia con Brand-Guidelines.md. |
+| Recursos e investigacion | `05-Recursos/` | Buscar datos de mercado reales y benchmarks del sector gastronomico en Mendoza. |
+| Assets visuales | `assets/` | Respetar la paleta de colores definida en `paleta-colores.svg`. Seguir convenciones de Obsidian para diagramas. |
+| Vault general | Raiz y estructura | Mantener convenciones de Obsidian (frontmatter, wikilinks, callouts) en toda operacion. |
 
-### Skills transversales (aplican a todas las areas)
+### Comportamientos transversales (aplican a todas las areas)
 
-- `brainstorming`: SIEMPRE primero, antes de cualquier tarea
-- `writing-plans`: antes de tareas que requieran multiples pasos de implementacion
-- `writing-clearly-and-concisely`: para toda prosa que se redacte en documentos
-- `obsidian`: para cualquier operacion sobre el vault (crear notas, wikilinks, frontmatter)
-- `dispatching-parallel-agents`: cuando haya 2 o mas tareas independientes que se puedan ejecutar en paralelo
-- `executing-plans`: cuando exista un plan de implementacion listo para ejecutar
+- **Brainstorming**: SIEMPRE primero, antes de cualquier tarea. Seguir el proceso descrito en la seccion "Brainstorming estructurado".
+- **Planificacion**: Antes de tareas complejas (mas de 3 pasos), escribir un plan paso a paso y presentarlo al usuario antes de ejecutar.
+- **Escritura clara**: Toda prosa que se redacte en documentos debe seguir principios de escritura clara y concisa. Evitar palabras innecesarias, voz pasiva excesiva y jerga vacia.
+- **Convenciones de Obsidian**: Para toda operacion sobre el vault, respetar frontmatter YAML, wikilinks y callouts.
+- **Paralelismo**: Cuando haya 2 o mas tareas independientes, identificarlas y ejecutarlas en paralelo si la plataforma lo permite.
+- **Ejecucion de planes**: Cuando exista un plan aprobado, ejecutarlo en lotes y reportar progreso entre cada lote.
 
 ### Flujo de trabajo estandar
 
-1. **Brainstorming**: Ejecutar skill `brainstorming`. Refinar la idea, identificar el area y las skills necesarias.
-2. **Contexto**: Seguir el protocolo de contexto. Leer archivos relevantes con `Read`, `Grep`, `Glob`.
-3. **Planificacion** (si aplica): Usar skill `writing-plans` para tareas complejas.
-4. **Ejecucion**: Aplicar las skills del area correspondiente. Usar `Agent` tool para tareas paralelas.
+1. **Brainstorming**: Reformular la tarea, identificar el area y los comportamientos necesarios.
+2. **Contexto**: Seguir el protocolo de contexto. Leer archivos relevantes y sus dependencias.
+3. **Planificacion** (si aplica): Para tareas complejas, escribir un plan paso a paso.
+4. **Ejecucion**: Aplicar los comportamientos del area correspondiente.
 5. **Revision**: Verificar convenciones del vault (frontmatter, wikilinks, callouts). Correr deteccion de inconsistencias si se tocaron cifras.
-6. **Commit y push**: Al finalizar, commit descriptivo y push con `gh`.
+6. **Commit y push**: Al finalizar, commit descriptivo y push con git.
 
 ---
 
@@ -287,7 +290,7 @@ Dos computadoras trabajan en paralelo sobre este repositorio via GitHub (`fgpaz/
 - No editar el mismo archivo en ambas computadoras a la vez
 - `.obsidian/workspace.json` esta en `.gitignore` (es config local de cada maquina)
 - `.claude/settings.local.json` esta en `.gitignore` (es config local de Claude Code)
-- SIEMPRE al finalizar un trabajo, hacer commit y push de los cambios usando `gh` (GitHub CLI)
+- SIEMPRE al finalizar un trabajo, hacer commit y push de los cambios
 
 ## Estructura del vault
 
