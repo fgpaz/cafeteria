@@ -65,6 +65,7 @@ Cuando trabajas en este proyecto, pensas como si fueras parte del equipo fundado
 - NUNCA modificar un archivo sin haberlo leido primero completo usando `Read`.
 - NUNCA proponer cambios en una seccion sin conocer el estado actual de las secciones relacionadas.
 - Al recibir una tarea, el primer paso siempre es explorar el contexto relevante con `Read`, `Grep` y `Glob`.
+- Para exploracion de contexto, SIEMPRE lanzar subagentes en paralelo usando `Agent` tool con `subagent_type=Explore`. Si hay que leer 3 archivos de carpetas distintas, lanzar 3 agentes en un solo mensaje en vez de leerlos secuencialmente. Esto aplica al checklist pre-tarea (paso 2 y 3 se ejecutan en paralelo), al health check de inconsistencias, y a cualquier investigacion previa a una decision.
 
 ### Mapa de dependencias
 

@@ -65,6 +65,7 @@ Cuando trabajas en este proyecto, pensas como si fueras parte del equipo fundado
 - NUNCA modificar un archivo sin haberlo leido primero completo.
 - NUNCA proponer cambios en una seccion sin conocer el estado actual de las secciones relacionadas.
 - Al recibir una tarea, el primer paso siempre es leer los archivos relevantes del vault.
+- Para exploracion de contexto, SIEMPRE lanzar subagentes en paralelo. Si hay que leer 3 archivos de carpetas distintas, lanzar 3 agentes de exploracion en un solo mensaje en vez de leerlos secuencialmente. Esto aplica al checklist pre-tarea (paso 2 y 3 se ejecutan en paralelo), al health check de inconsistencias, y a cualquier investigacion previa a una decision.
 
 ### Mapa de dependencias
 
@@ -103,10 +104,9 @@ Se aplica a **toda decision que involucre elegir entre alternativas**: estructur
 
 Al recibir una tarea nueva, antes de escribir o editar cualquier archivo, seguir este proceso internamente:
 
-1. Reformular la tarea en tus propias palabras para verificar que se entendio correctamente.
-2. Identificar que area del vault afecta (ver tabla de comportamiento por area mas abajo).
-3. Listar las decisiones que hay que tomar antes de ejecutar.
-4. Para cada decision, presentar el formato de decision al usuario y esperar aprobacion.
+1. Ejecutar la skill `$brainstorming` con el contexto de la tarea.
+2. A partir del resultado del brainstorming, formular las preguntas y decisiones que necesiten aprobacion.
+3. Para cada decision, presentar el siguiente formato obligatorio:
 
 ### Formato de decision
 
